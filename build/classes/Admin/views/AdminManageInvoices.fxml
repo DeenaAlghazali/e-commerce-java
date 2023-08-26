@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="532.0" prefWidth="841.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="522.0" prefWidth="179.0">
+         <children>
+            <Button fx:id="manageProductsBtn" mnemonicParsing="false" onAction="#manageProductsBtnHandle" prefHeight="55.0" prefWidth="171.0" styleClass="dashbordbtn" text=" Manage Products" />
+            <Button fx:id="manageOrdersBtn" mnemonicParsing="false" onAction="#manageOrdersBtnHandle" prefHeight="55.0" prefWidth="171.0" styleClass="dashbordbtn" text=" Manage Orders" />
+            <Button fx:id="manageClientsBtn" mnemonicParsing="false" onAction="#manageClientsBtnHandle" prefHeight="55.0" prefWidth="171.0" styleClass="dashbordbtn" text="Manage Clients" />
+            <Button fx:id="manageInvoicesBtn" mnemonicParsing="false" onAction="#manageInvoicesBtnHandle" prefHeight="55.0" prefWidth="171.0" style="-fx-text-fill: black; -fx-background-color: #3385ff;" styleClass="dashbordbtn" text="Manage Invoices" />
+            <Button fx:id="changePasswordBtn" mnemonicParsing="false" onAction="#changePasswordBtnHandle" prefHeight="55.0" prefWidth="171.0" styleClass="dashbordbtn" text=" Change Password" />
+            <Button fx:id="logoutBtn" mnemonicParsing="false" onAction="#logoutBtnHandle" prefHeight="55.0" prefWidth="171.0" styleClass="dashbordbtn" text=" Logout" />
+         </children>
+         <opaqueInsets>
+            <Insets top="10.0" />
+         </opaqueInsets>
+      </VBox>
+      <VBox alignment="CENTER" layoutX="249.0" layoutY="40.0" prefHeight="453.0" prefWidth="547.0" style="-fx-background-color: #767e89;">
+         <children>
+            <HBox alignment="CENTER" prefHeight="50.0" prefWidth="693.0">
+               <children>
+                  <Label text="All Invoices" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="26.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <TableView fx:id="invoicesTable" editable="true" maxWidth="-Infinity" prefHeight="311.0" prefWidth="340.0">
+               <columns>
+                  <TableColumn fx:id="tcId" prefWidth="75.0" text="id" />
+                  <TableColumn fx:id="tcOrderId" prefWidth="75.0" text="order_id" />
+                  <TableColumn fx:id="tcTotalPrice" prefWidth="96.0" text="total_price" />
+                  <TableColumn fx:id="tcData" prefWidth="93.0" text="date" />
+               </columns>
+            </TableView>
+            <HBox alignment="CENTER" prefHeight="63.0" prefWidth="662.0" spacing="10.0">
+               <children>
+                  <Button fx:id="BackBtn" mnemonicParsing="false" onAction="#BackBtnHandle" text="Back" />
+                  <Button fx:id="showBtn" mnemonicParsing="false" onAction="#showBtnHandle" text="Show" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <HBox alignment="CENTER" layoutX="20.0" layoutY="20.0" prefHeight="75.0" prefWidth="167.0">
+         <children>
+            <ImageView fitHeight="60.0" fitWidth="82.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/logo2.png" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+   </children>
+   <stylesheets>
+      <URL value="@../../Styles/buttons.css" />
+      <URL value="@../../Styles/dashbord.css" />
+   </stylesheets>
+</AnchorPane>

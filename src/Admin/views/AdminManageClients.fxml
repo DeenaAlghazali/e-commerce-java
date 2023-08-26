@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import java.net.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="522.0" prefWidth="944.0" style="-fx-background-color: #e9edf3;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <VBox alignment="CENTER" layoutX="184.0" layoutY="-1.0" prefHeight="522.0" prefWidth="783.0">
+            <children>
+                <Label text="All Clients">
+                    <font>
+                        <Font name="System Bold" size="26.0" />
+                    </font>
+                </Label>
+                <TableView fx:id="usersTable" maxWidth="-Infinity" prefHeight="289.0" prefWidth="533.0">
+                    <columns>
+                        <TableColumn fx:id="tcId" prefWidth="75.0" text="id" />
+                        <TableColumn fx:id="tcName" prefWidth="82.0" text="name" />
+                        <TableColumn fx:id="tcEmail" prefWidth="147.0" text="email" />
+                        <TableColumn fx:id="tcMobile" prefWidth="114.0" text="mobile" />
+                        <TableColumn fx:id="tcPassword" prefWidth="114.0" text="password" />
+                    </columns>
+                </TableView>
+                <HBox alignment="CENTER" prefHeight="65.0" prefWidth="783.0" spacing="10.0">
+                    <children>
+                        <Button fx:id="searchByNameBtn" mnemonicParsing="false" onAction="#searchByNameBtnHandle" text="Search by name" />
+                        <TextField fx:id="searchTF" />
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER" prefHeight="49.0" prefWidth="783.0" spacing="10.0">
+                    <children>
+                        <Button fx:id="backBtn" mnemonicParsing="false" onAction="#backBtnHandle" text="Back" />
+                        <Button fx:id="showBtn" mnemonicParsing="false" onAction="#showBtnHandle" text="Show" />
+                        <Button fx:id="deleteBtn" mnemonicParsing="false" onAction="#deleteBtnHandle" text="Delete" />
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+        <VBox alignment="CENTER" prefHeight="522.0" prefWidth="179.0">
+            <children>
+                <Button fx:id="manageProductsBtn" mnemonicParsing="false" onAction="#manageProductsBtnHandle" prefHeight="55.0" prefWidth="171.0" style=": ;" styleClass="dashbordbtn" text=" Manage Products" />
+                <Button fx:id="manageOrdersBtn" mnemonicParsing="false" onAction="#manageOrdersBtnHandle" prefHeight="55.0" prefWidth="171.0" styleClass="dashbordbtn" text=" Manage Orders" />
+                <Button fx:id="manageClientsBtn" mnemonicParsing="false" onAction="#manageClientsBtnHandle" prefHeight="55.0" prefWidth="171.0" style="-fx-background-color: #3385ff; -fx-text-fill: black;" styleClass="dashbordbtn" text="Manage Clients" />
+                <Button fx:id="manageInvoicesBtn" mnemonicParsing="false" onAction="#manageInvoicesBtnHandle" prefHeight="55.0" prefWidth="171.0" styleClass="dashbordbtn" text="Manage Invoices" />
+                <Button fx:id="changePasswordBtn" mnemonicParsing="false" onAction="#changePasswordBtnHandle" prefHeight="55.0" prefWidth="171.0" styleClass="dashbordbtn" text=" Change Password" />
+                <Button fx:id="logoutBtn" mnemonicParsing="false" onAction="#logoutBtnHandle" prefHeight="55.0" prefWidth="171.0" styleClass="dashbordbtn" text=" Logout" />
+            </children>
+            <opaqueInsets>
+                <Insets top="10.0" />
+            </opaqueInsets>
+        </VBox>
+        <HBox alignment="CENTER" layoutX="20.0" layoutY="20.0" prefHeight="75.0" prefWidth="145.0">
+            <children>
+                <ImageView fitHeight="60.0" fitWidth="82.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../images/logo2.png" />
+                    </image>
+                </ImageView>
+            </children>
+        </HBox>
+    </children>
+    <stylesheets>
+        <URL value="@../../Styles/buttons.css" />
+        <URL value="@../../Styles/dashbord.css" />
+    </stylesheets>
+</AnchorPane>

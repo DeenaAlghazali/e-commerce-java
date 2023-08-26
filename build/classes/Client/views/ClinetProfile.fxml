@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <BorderPane layoutX="-1.0" layoutY="-3.0" prefHeight="401.0" prefWidth="600.0">
+         <center>
+            <VBox alignment="CENTER" prefHeight="395.0" prefWidth="600.0" spacing="30.0" stylesheets="@../../Styles/buttons.css" BorderPane.alignment="CENTER">
+               <children>
+                  <Label text="User Profile">
+                     <font>
+                        <Font name="System Bold" size="26.0" />
+                     </font>
+                  </Label>
+                  <TableView fx:id="userInfoTable" editable="true" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="85.0" prefWidth="385.0">
+                    <columns>
+                      <TableColumn fx:id="tcName" prefWidth="122.0" text="name" />
+                      <TableColumn fx:id="tcEmail" prefWidth="138.0" text="email" />
+                        <TableColumn fx:id="tcMobile" minWidth="0.0" prefWidth="122.0" text="mobile" />
+                    </columns>
+                  </TableView>
+                  <HBox alignment="CENTER" prefHeight="77.0" prefWidth="600.0" spacing="20.0">
+                     <children>
+                        <Button fx:id="backBtn" mnemonicParsing="false" onAction="#backBtnHandle" text="Back" />
+                        <Button fx:id="showBtn" mnemonicParsing="false" onAction="#showBtnHandle" text="Show" />
+                        <Button fx:id="updateBtn" mnemonicParsing="false" onAction="#updateBtnHandle" text="update" />
+                        <Button fx:id="resetBtn" mnemonicParsing="false" onAction="#resetBtnHandle" text="Reset" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </center>
+         <top>
+            <MenuBar fx:id="menuBar" BorderPane.alignment="CENTER">
+               <menus>
+                  <Menu fx:id="file" mnemonicParsing="false" text="File">
+                     <items>
+                        <MenuItem fx:id="close" mnemonicParsing="false" text="Close">
+                           <graphic>
+                              <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../images/close.jpg" />
+                                 </image>
+                              </ImageView>
+                           </graphic></MenuItem>
+                     </items>
+                  </Menu>
+                  <Menu fx:id="format" mnemonicParsing="false" text="Format">
+                     <items>
+                        <Menu fx:id="fontSiza" mnemonicParsing="false" text="Font Size">
+                           <items>
+                              <MenuItem fx:id="font10" mnemonicParsing="false" text="10" />
+                              <MenuItem fx:id="font15" mnemonicParsing="false" text="15" />
+                              <MenuItem fx:id="font20" mnemonicParsing="false" text="20" />
+                           </items>
+                        </Menu>
+                        <Menu fx:id="fontFamily" mnemonicParsing="false" text="Font Family">
+                           <items>
+                              <MenuItem fx:id="cursive" mnemonicParsing="false" text="cursive" />
+                              <MenuItem fx:id="sans_serif" mnemonicParsing="false" text="sans-serif" />
+                              <MenuItem fx:id="serif" mnemonicParsing="false" text="serif" />
+                           </items>
+                        </Menu>
+                        <Menu fx:id="BackgroundColor" mnemonicParsing="false" text="Backgroun Color">
+                           <items>
+                              <MenuItem fx:id="red" mnemonicParsing="false" text="Red" />
+                              <MenuItem fx:id="green" mnemonicParsing="false" text="Green" />
+                              <MenuItem fx:id="pink" mnemonicParsing="false" text="Pink" />
+                           </items>
+                        </Menu>
+                     </items>
+                  </Menu>
+                  <Menu fx:id="help" mnemonicParsing="false" text="Help">
+                     <items>
+                        <MenuItem fx:id="about" mnemonicParsing="false" text="About">
+                           <graphic>
+                              <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../images/information.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic></MenuItem>
+                     </items>
+                  </Menu>
+               </menus>
+            </MenuBar>
+         </top>
+      </BorderPane>
+   </children>
+</AnchorPane>

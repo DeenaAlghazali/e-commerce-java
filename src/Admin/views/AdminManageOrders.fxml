@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import java.net.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="591.0" prefWidth="1144.0" style="-fx-background-color: #e9edf3;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox layoutX="219.0" prefHeight="591.0" prefWidth="937.0">
+         <children>
+            <HBox prefHeight="599.0" prefWidth="962.0">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="591.0" prefWidth="387.0">
+                     <children>
+                        <Label text="Add Order">
+                           <font>
+                              <Font name="System Bold" size="26.0" />
+                           </font>
+                        </Label>
+                        <VBox alignment="CENTER" prefHeight="339.0" prefWidth="370.0">
+                           <children>
+                              <HBox alignment="CENTER" prefHeight="46.0" prefWidth="370.0" spacing="20.0">
+                                 <children>
+                                    <Label text="product_id" />
+                                    <ComboBox fx:id="productIdCombo" prefHeight="31.0" prefWidth="194.0" />
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="46.0" prefWidth="370.0" spacing="20.0">
+                                 <children>
+                                    <Label prefHeight="21.0" prefWidth="74.0" text="user_id" />
+                                    <ComboBox fx:id="userIdCombo" prefWidth="194.0" />
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="50.0" prefWidth="370.0" spacing="20.0">
+                                 <children>
+                                    <Label prefHeight="21.0" prefWidth="73.0" text="quantity" />
+                                    <TextField fx:id="quantityTF" prefHeight="31.0" prefWidth="194.0" />
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="42.0" prefWidth="370.0" spacing="20.0">
+                                 <children>
+                                    <Label prefHeight="21.0" prefWidth="68.0" text="date" />
+                                    <DatePicker fx:id="dateTF" prefHeight="31.0" prefWidth="191.0" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="591.0" prefWidth="584.0" spacing="20.0" style="-fx-background-color: #767e89;">
+                     <children>
+                        <Label prefHeight="15.0" prefWidth="123.0" text="All Orders">
+                           <font>
+                              <Font name="System Bold" size="26.0" />
+                           </font>
+                        </Label>
+                        <TableView fx:id="ordersTable" maxWidth="-Infinity" prefHeight="372.0" prefWidth="458.0">
+                          <columns>
+                            <TableColumn fx:id="tcId" prefWidth="75.0" text="id" />
+                            <TableColumn fx:id="tcProductId" prefWidth="96.0" text="product_id" />
+                              <TableColumn fx:id="tcUserId" prefWidth="87.0" text="user_id" />
+                              <TableColumn fx:id="tcQuantity" prefWidth="99.0" text="quantity" />
+                              <TableColumn fx:id="tcDate" prefWidth="100.0" text="date" />
+                          </columns>
+                        </TableView>
+                        <HBox alignment="CENTER" prefHeight="53.0" prefWidth="567.0" spacing="20.0">
+                           <children>
+                              <Button fx:id="searchByUserIdBtn" mnemonicParsing="false" onAction="#searchByUserIdBtnHandle" text="search by user id" />
+                              <ComboBox fx:id="searchCombo" prefWidth="150.0" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="55.0" prefWidth="582.0" spacing="20.0">
+                           <children>
+                              <Button fx:id="backBtn" mnemonicParsing="false" onAction="#backBtnHandle" text="Back" />
+                              <Button fx:id="showBtn" mnemonicParsing="false" onAction="#showBtnHandle" text="Show" />
+                              <Button fx:id="addBtn" mnemonicParsing="false" onAction="#addBtnHandle" text="Add" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </HBox>
+      <VBox layoutX="-2.0" layoutY="3.0" prefHeight="482.0" prefWidth="151.0" />
+      <VBox layoutX="7.0" layoutY="10.0" prefHeight="522.0" prefWidth="194.0">
+         <children>
+            <VBox alignment="CENTER_LEFT" prefHeight="520.0" prefWidth="178.0">
+               <children>
+                  <HBox alignment="CENTER" maxWidth="-Infinity" prefHeight="75.0" prefWidth="177.0">
+                     <children>
+                        <ImageView fitHeight="60.0" fitWidth="66.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../images/logo2.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </HBox>
+                  <Button fx:id="manageProductsBtn" mnemonicParsing="false" onAction="#manageProductsBtnHandle" prefHeight="55.0" prefWidth="171.0" style=": ;" styleClass="dashbordbtn" text=" Manage Products" />
+                  <Button fx:id="manageOrdersBtn" mnemonicParsing="false" onAction="#manageOrdersBtnHandle" prefHeight="55.0" prefWidth="171.0" style="-fx-background-color: #3385ff; -fx-text-fill: black;" styleClass="dashbordbtn" text=" Manage Orders" />
+                  <Button fx:id="manageClientsBtn" mnemonicParsing="false" onAction="#manageClientsBtnHandle" prefHeight="55.0" prefWidth="171.0" styleClass="dashbordbtn" text="Manage Clients" />
+                  <Button fx:id="manageInvoicesBtn" mnemonicParsing="false" onAction="#manageInvoicesBtnHandle" prefHeight="55.0" prefWidth="171.0" styleClass="dashbordbtn" text="Manage Invoices" />
+                  <Button fx:id="changePasswordBtn" mnemonicParsing="false" onAction="#changePasswordBtnHandle" prefHeight="55.0" prefWidth="171.0" styleClass="dashbordbtn" text=" Change Password" />
+                  <Button fx:id="logoutBtn" mnemonicParsing="false" onAction="#logoutBtnHandle" prefHeight="55.0" prefWidth="171.0" styleClass="dashbordbtn" text=" Logout" />
+               </children>
+               <opaqueInsets>
+                  <Insets top="10.0" />
+               </opaqueInsets>
+            </VBox>
+         </children>
+      </VBox>
+   </children>
+   <stylesheets>
+      <URL value="@../../Styles/buttons.css" />
+      <URL value="@../../Styles/dashbord.css" />
+   </stylesheets>
+</AnchorPane>

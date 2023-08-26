@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/VICTUS/OneDrive/Documents/NetBeansProjects/FinalProject/src/Admin/Controller/AdminManageClientsController.java</file>
+            <file>file:/C:/Users/VICTUS/OneDrive/Documents/NetBeansProjects/FinalProject/src/Entity/Invoices.java</file>
+            <file>file:/C:/Users/VICTUS/OneDrive/Documents/NetBeansProjects/FinalProject/src/Auth/Controller/SignUpController.java</file>
+            <file>file:/C:/Users/VICTUS/OneDrive/Documents/NetBeansProjects/FinalProject/src/Admin/Controller/AdminManageInvoicesController.java</file>
+            <file>file:/C:/Users/VICTUS/OneDrive/Documents/NetBeansProjects/FinalProject/src/Admin/Controller/AdminManageProductsController.java</file>
+            <file>file:/C:/Users/VICTUS/OneDrive/Documents/NetBeansProjects/FinalProject/src/Client/Controller/ViewInvicesController.java</file>
+            <file>file:/C:/Users/VICTUS/OneDrive/Documents/NetBeansProjects/FinalProject/src/Client/views/ClientDashboard.fxml</file>
+            <file>file:/C:/Users/VICTUS/OneDrive/Documents/NetBeansProjects/FinalProject/src/Client/views/ManageOrders.fxml</file>
+            <file>file:/C:/Users/VICTUS/OneDrive/Documents/NetBeansProjects/FinalProject/src/Auth/views/Login.fxml</file>
+            <file>file:/C:/Users/VICTUS/OneDrive/Documents/NetBeansProjects/FinalProject/src/Admin/Controller/AdminChangePasswordController.java</file>
+            <file>file:/C:/Users/VICTUS/OneDrive/Documents/NetBeansProjects/FinalProject/src/Styles/dashbord.css</file>
+            <file>file:/C:/Users/VICTUS/OneDrive/Documents/NetBeansProjects/FinalProject/src/Database/DatabaseConnection.java</file>
+            <file>file:/C:/Users/VICTUS/OneDrive/Documents/NetBeansProjects/FinalProject/src/Auth/views/SignUp.fxml</file>
+            <file>file:/C:/Users/VICTUS/OneDrive/Documents/NetBeansProjects/FinalProject/src/Styles/buttons.css</file>
+            <file>file:/C:/Users/VICTUS/OneDrive/Documents/NetBeansProjects/FinalProject/src/Admin/views/AdminChangePassword.fxml</file>
+            <file>file:/C:/Users/VICTUS/OneDrive/Documents/NetBeansProjects/FinalProject/src/Client/Controller/ClientDashboardController.java</file>
+            <file>file:/C:/Users/VICTUS/OneDrive/Documents/NetBeansProjects/FinalProject/src/Client/views/ClinetProfile.fxml</file>
+            <file>file:/C:/Users/VICTUS/OneDrive/Documents/NetBeansProjects/FinalProject/src/Client/Controller/ChangePasswordController.java</file>
+            <file>file:/C:/Users/VICTUS/OneDrive/Documents/NetBeansProjects/FinalProject/src/Auth/Controller/LoginController.java</file>
+            <file>file:/C:/Users/VICTUS/OneDrive/Documents/NetBeansProjects/FinalProject/src/Admin/views/AdminDashboard.fxml</file>
+            <file>file:/C:/Users/VICTUS/OneDrive/Documents/NetBeansProjects/FinalProject/src/Styles/login.css</file>
+            <file>file:/C:/Users/VICTUS/OneDrive/Documents/NetBeansProjects/FinalProject/src/Client/views/ChangePassword.fxml</file>
+            <file>file:/C:/Users/VICTUS/OneDrive/Documents/NetBeansProjects/FinalProject/src/Admin/views/AdminManageInvoices.fxml</file>
+            <file>file:/C:/Users/VICTUS/OneDrive/Documents/NetBeansProjects/FinalProject/src/Entity/User.java</file>
+            <file>file:/C:/Users/VICTUS/OneDrive/Documents/NetBeansProjects/FinalProject/src/Client/Controller/ClinetProfileController.java</file>
+            <file>file:/C:/Users/VICTUS/OneDrive/Documents/NetBeansProjects/FinalProject/src/Admin/Controller/AdminDashboardController.java</file>
+            <file>file:/C:/Users/VICTUS/OneDrive/Documents/NetBeansProjects/FinalProject/src/Admin/Controller/AdminManageOrdersController.java</file>
+            <file>file:/C:/Users/VICTUS/OneDrive/Documents/NetBeansProjects/FinalProject/src/Client/Controller/ManageOrdersController.java</file>
+            <file>file:/C:/Users/VICTUS/OneDrive/Documents/NetBeansProjects/FinalProject/src/Admin/views/AdminManageOrders.fxml</file>
+            <file>file:/C:/Users/VICTUS/OneDrive/Documents/NetBeansProjects/FinalProject/src/Client/views/ViewInvices.fxml</file>
+            <file>file:/C:/Users/VICTUS/OneDrive/Documents/NetBeansProjects/FinalProject/src/Main/Main.java</file>
+        </group>
+    </open-files>
+</project-private>

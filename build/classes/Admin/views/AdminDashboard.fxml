@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" stylesheets="@../../Styles/dashbord.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox prefHeight="407.0" prefWidth="600.0">
+         <children>
+            <BorderPane prefHeight="520.0" prefWidth="600.0" style="-fx-background-color: #e9edf3;">
+               <top>
+                  <HBox prefHeight="75.0" prefWidth="600.0" style="-fx-background-color: #4287f5;" BorderPane.alignment="CENTER">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="75.0" prefWidth="136.0">
+                           <children>
+                              <ImageView fitHeight="60.0" fitWidth="82.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../images/logo2.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </HBox>
+                        <Label prefHeight="62.0" prefWidth="200.0" text="        Welcom Admin">
+                           <font>
+                              <Font name="Bold Italic Art" size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </top>
+               <left>
+                  <VBox prefHeight="381.0" prefWidth="175.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Button fx:id="manageProductsBtn" mnemonicParsing="false" onAction="#manageProductsBtnHandle" prefHeight="55.0" prefWidth="171.0" styleClass="dashbordbtn" text=" Manage Products" />
+                        <Button fx:id="manageOrdersBtn" mnemonicParsing="false" onAction="#manageOrdersBtnHandle" prefHeight="55.0" prefWidth="171.0" styleClass="dashbordbtn" text=" Manage Orders" />
+                        <Button fx:id="manageClientsBtn" mnemonicParsing="false" onAction="#manageClientsBtnHandle" prefHeight="55.0" prefWidth="171.0" styleClass="dashbordbtn" text="Manage Clients" />
+                        <Button fx:id="manageInvoicesBtn" mnemonicParsing="false" onAction="#manageInvoicesBtnHandle" prefHeight="55.0" prefWidth="171.0" styleClass="dashbordbtn" text="Manage Invoices" />
+                        <Button fx:id="changePasswordBtn" mnemonicParsing="false" onAction="#changePasswordBtnHandle" prefHeight="55.0" prefWidth="171.0" styleClass="dashbordbtn" text=" Change Password" />
+                        <Button fx:id="logoutBtn" mnemonicParsing="false" onAction="#logoutBtnHandle" prefHeight="55.0" prefWidth="171.0" styleClass="dashbordbtn" text=" Logout" />
+                     </children>
+                     <opaqueInsets>
+                        <Insets top="10.0" />
+                     </opaqueInsets>
+                  </VBox>
+               </left>
+               <center>
+                  <VBox prefHeight="328.0" prefWidth="425.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="147.0" prefWidth="427.0" spacing="30.0">
+                           <children>
+                              <VBox alignment="CENTER" maxHeight="-Infinity" prefHeight="102.0" prefWidth="162.0" spacing="20.0" style="-fx-border-color: #767e89; -fx-border-width: 4px;">
+                                 <children>
+                                    <Label text="Number of products" textFill="#4287f5">
+                                       <font>
+                                          <Font name="System Bold" size="15.0" />
+                                       </font></Label>
+                                    <Label fx:id="numOfProducts" textFill="#767e89">
+                                       <font>
+                                          <Font name="System Bold" size="15.0" />
+                                       </font></Label>
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" maxHeight="-Infinity" prefHeight="102.0" prefWidth="162.0" spacing="20.0" style="-fx-border-color: #767e89; -fx-border-width: 4px;">
+                                 <children>
+                                    <Label text="Number of Orders" textFill="#4287f5">
+                                       <font>
+                                          <Font name="System Bold Italic" size="15.0" />
+                                       </font></Label>
+                                    <Label fx:id="numOfOrders" textFill="#767e89">
+                                       <font>
+                                          <Font name="System Bold" size="15.0" />
+                                       </font></Label>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="120.0" prefWidth="427.0" spacing="30.0">
+                           <children>
+                              <VBox alignment="CENTER" maxHeight="-Infinity" prefHeight="102.0" prefWidth="162.0" spacing="20.0" style="-fx-border-color: #767e89; -fx-border-width: 4px;">
+                                 <children>
+                                    <Label text="Number of Clients" textFill="#4287f5">
+                                       <font>
+                                          <Font name="System Bold Italic" size="15.0" />
+                                       </font></Label>
+                                    <Label fx:id="numOfClients" textFill="#767e89" />
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" maxHeight="-Infinity" prefHeight="102.0" prefWidth="162.0" spacing="20.0" style="-fx-border-color: #767e89; -fx-border-width: 4px;">
+                                 <children>
+                                    <Label text="Total invoices" textFill="#4287f5">
+                                       <font>
+                                          <Font name="System Bold" size="15.0" />
+                                       </font></Label>
+                                    <Label fx:id="totalInvoices" textFill="#767e89" />
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </center>
+            </BorderPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

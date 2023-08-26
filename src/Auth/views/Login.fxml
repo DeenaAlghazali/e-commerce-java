@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="502.0" prefWidth="832.0" stylesheets="@../../Styles/login.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox layoutX="-1.0" layoutY="-1.0" prefHeight="502.0" prefWidth="832.0">
+         <children>
+            <VBox alignment="CENTER" prefHeight="502.0" prefWidth="419.0" spacing="30.0" style="-fx-background-color: #4287f5;">
+               <children>
+                  <Label text="DreamDazzle">
+                     <font>
+                        <Font name="Constantia" size="37.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="245.0" fitWidth="326.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../loginImages/img.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="502.0" prefWidth="427.0">
+               <children>
+                  <Label prefHeight="44.0" prefWidth="195.0" text="Login Form">
+                     <font>
+                        <Font name="Constantia" size="37.0" />
+                     </font>
+                  </Label>
+                  <VBox alignment="CENTER" prefHeight="336.0" prefWidth="420.0">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="48.0" prefWidth="420.0" spacing="20.0">
+                           <children>
+                              <ImageView fitHeight="32.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../loginImages/user.png" />
+                                 </image>
+                              </ImageView>
+                              <TextField fx:id="emailTF" maxWidth="-Infinity" prefHeight="31.0" prefWidth="194.0" promptText="Email" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="65.0" prefWidth="420.0" spacing="20.0">
+                           <children>
+                              <ImageView fitHeight="32.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../loginImages/pass.png" />
+                                 </image>
+                              </ImageView>
+                              <PasswordField fx:id="passwordTF" maxWidth="-Infinity" prefHeight="31.0" prefWidth="194.0" promptText="password" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="TOP_CENTER" prefHeight="44.0" prefWidth="420.0" spacing="20.0">
+                           <children>
+                              <Button fx:id="loginBtn" mnemonicParsing="false" onAction="#loginBtnHandle" text="Login" />
+                              <Button fx:id="signupBtn" mnemonicParsing="false" onAction="#signupBtnHandle" text="sign up" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

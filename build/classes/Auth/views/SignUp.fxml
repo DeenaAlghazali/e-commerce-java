@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="502.0" prefWidth="832.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox prefHeight="502.0" prefWidth="836.0">
+         <children>
+            <VBox alignment="CENTER" prefHeight="502.0" prefWidth="419.0" spacing="30.0" style="-fx-background-color: #4287f5;">
+               <children>
+                  <Label text="DreamDazzle">
+                     <font>
+                        <Font name="Constantia" size="37.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="245.0" fitWidth="326.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../loginImages/img.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="502.0" prefWidth="417.0">
+               <children>
+                  <Label prefHeight="44.0" prefWidth="229.0" text="Sign up Form">
+                     <font>
+                        <Font name="Constantia" size="37.0" />
+                     </font>
+                  </Label>
+                  <VBox alignment="CENTER" prefHeight="378.0" prefWidth="417.0" stylesheets="@../../Styles/login.css">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="56.0" prefWidth="600.0" spacing="20.0">
+                           <children>
+                              <Label text="name" />
+                              <TextField fx:id="nameTF" maxWidth="-Infinity" prefHeight="31.0" prefWidth="194.0" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="56.0" prefWidth="600.0" spacing="20.0">
+                           <children>
+                              <Label text="email" />
+                              <TextField fx:id="emailTF" maxWidth="-Infinity" prefHeight="31.0" prefWidth="194.0" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="56.0" prefWidth="600.0" spacing="20.0">
+                           <children>
+                              <Label text="mobile" />
+                              <TextField fx:id="moblieTF" maxWidth="-Infinity" prefHeight="31.0" prefWidth="194.0" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="56.0" prefWidth="600.0" spacing="20.0">
+                           <children>
+                              <Label text="password" />
+                              <PasswordField fx:id="passwordTF" prefHeight="31.0" prefWidth="194.0" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="56.0" prefWidth="600.0" spacing="20.0">
+                           <children>
+                              <Button fx:id="backBtn" mnemonicParsing="false" onAction="#backBtnHandle" text="Back" />
+                              <Button fx:id="signUpBtn" mnemonicParsing="false" onAction="#signUpBtnHandle" text="Sign up" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
